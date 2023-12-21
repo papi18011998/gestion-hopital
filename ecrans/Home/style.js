@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { PADDING, TEXT_SIZE } from "../../outils/constantes";
+import { COLORS, PADDING, TEXT_SIZE } from "../../outils/constantes";
 
 export const dashboardStyle = StyleSheet.create({
     headerStyle:{
@@ -43,4 +43,59 @@ export const dashboardStyle = StyleSheet.create({
         marginTop:30,
         fontSize: 10
     },
+    title:{
+        paddingVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal
+    },
+    title_space_between:{
+        marginTop:15,
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical,
+        flexDirection: "row",
+        justifyContent:"space-between",
+    
+    },
+    titleBold:{
+        fontWeight:"bold"
+    },
+    link:{
+        color: COLORS.main
+    },
+    doctorsContainer:{
+        paddingHorizontal:PADDING.horizontal,
+        paddingVertical:PADDING.vertical
+    },
+    doctorCard:{
+        flex: 1,
+        flexDirection:"row",
+        backgroundColor:"#FFFFFF",
+        elevation:5,
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical,
+        marginBottom:10,
+        borderRadius: 10
+    },
+    doctorImg:{
+        width: 80,
+        height:80,
+        borderRadius: 80,
+        marginTop:15
+    },
+    doctorInfo:{
+        flexDirection:"column",
+
+    },
+    doctorName:{
+        fontWeight:"bold",
+        fontSize: 16,
+        marginBottom:15
+    },
+    doctorSpec:{
+        color: "#FFFFFF",
+        padding:5,
+        paddingHorizontal: PADDING.horizontal,
+        borderRadius:15,
+        fontSize: 14,
+
+    }
 });

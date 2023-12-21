@@ -4,6 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from '../Home';
 import Message from '../Message';
 import Parametres from '../Parametres';
+import { COLORS } from '../../outils/constantes';
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -14,10 +15,10 @@ const BottomTabs = () => {
       initialRouteName="home"
       inactiveColor='#000000'
       activeColor="#FFFFFF"
-      barStyle={{ backgroundColor: 'coral' }}
+      barStyle={{ backgroundColor: COLORS.main }}
     >
       <Tab.Screen
-        name="Feed"
+        name="Home"
         component={Home}
         options={{
           tabBarLabel: 'Home',
