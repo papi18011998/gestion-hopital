@@ -83,7 +83,7 @@ export const dashboardStyle = StyleSheet.create({
     },
     doctorInfo:{
         flexDirection:"column",
-
+        marginLeft: 15
     },
     doctorName:{
         fontWeight:"bold",
@@ -92,6 +92,7 @@ export const dashboardStyle = StyleSheet.create({
     },
     doctorSpec:{
         color: "#FFFFFF",
+        backgroundColor: COLORS.main,
         padding:5,
         paddingHorizontal: PADDING.horizontal,
         borderRadius:15,
