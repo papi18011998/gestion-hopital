@@ -9,7 +9,10 @@ import SymptomeItem from '../../composants/SymptomeItem';
 import { symptomes } from '../../fixtures/symptomes';
 import { doctors } from '../../fixtures/doctors';
 
-const Home = () => {
+const Home = ({navigation}) => {
+  const getDoctors = ()=>{
+    navigation.navigate('Message')
+  }
   return (
     <ScrollView style={{backgroundColor:COLORS.content}}>
       {/* Debut du header */}
@@ -51,7 +54,9 @@ const Home = () => {
       {/* Nos docteurs */}
           <View style={dashboardStyle.title_space_between}>
               <Text style={dashboardStyle.titleBold} >Nos Docteurs</Text>
-              <Text style={dashboardStyle.link} >Afficher plus</Text>
+              <TouchableOpacity onPress={getDoctors}>
+                <Text style={dashboardStyle.link} >Afficher plus</Text>
+              </TouchableOpacity>
           </View>
           <View style={dashboardStyle.doctorsContainer}>
             {
